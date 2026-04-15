@@ -83,7 +83,7 @@
         <strong>Case studies, dashboards, and concise walkthrough videos</strong>
       </div>
       <div class="proof-card glass">
-        <span class="proof-label">What recruiters can expect</span>
+        <span class="proof-label">What I build</span>
         <strong>Technical depth with strong business framing</strong>
       </div>
     </section>
@@ -97,8 +97,8 @@
         <div class="glass about-card">
           <p>
             I completed my BSc in Mathematical Statistics and Computer Science at the University of Cape Town and I am currently pursuing
-            BSc Honours in Computer Science at the University of Pretoria. My work sits at the intersection of analytics, machine learning,
-            intelligent automation, and financial decision support.
+            BSc Honours in Computer Science at the University of Pretoria. I am a former Junior Data Scientist at Absa Group Limited under Financial Crime Intelligence Unit and Surveillance. My work sits at the intersection of analytics, machine learning,
+            intelligent automation, and financial crime decision support.
           </p>
           <p>
             I enjoy building projects that go beyond code: clean dashboards, measurable model performance, sharp product thinking, and
@@ -110,6 +110,8 @@
           <div class="stack-list">
             <span>Python</span>
             <span>SQL</span>
+            <span>Java</span>
+            <span>Hadoop</span>
             <span>R</span>
             <span>SAS</span>
             <span>Power BI</span>
@@ -189,20 +191,31 @@
           <div class="media-panel">
             <img src="credit-card-dashboard.png" alt="Credit card analytics dashboard screenshot" class="media-image" />
             <div class="media-caption">Dashboard preview — customer behaviour, default status, risk segments, and executive KPIs.</div>
+
             <div class="video-card">
               <div class="video-topline">Project walkthrough</div>
-              <div class="video-embed-wrap">
-                <iframe
-                  class="video-embed"
-                  src="https://www.youtube.com/embed/9IbyXlkI_hU"
-                  title="Credit Risk Dashboard Demo"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
+              <a
+                class="video-preview-link"
+                href="https://youtu.be/9IbyXlkI_hU"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="credit-card-dashboard.png"
+                  alt="Credit Risk Dashboard Demo"
+                  class="video-preview-image clickable-image"
+                  onclick="event.preventDefault(); openLightbox(this.src);"
+                />
+              </a>
               <p class="video-note">A concise walkthrough of the dashboard, risk logic, and the key business insights behind the model.</p>
+              <a
+                class="btn btn-primary"
+                href="https://youtu.be/9IbyXlkI_hU"
+                target="_blank"
+                rel="noopener"
+              >
+                Watch walkthrough
+              </a>
             </div>
           </div>
         </div>
@@ -262,25 +275,36 @@
           </div>
 
           <div class="media-panel media-gallery">
-            <img src="country-risk-workflow.png" alt="Country risk workflow in n8n" class="media-image" />
+            <img src="country-risk-workflow.png" alt="Country risk workflow in n8n" class="media-image clickable-image" onclick="openLightbox(this.src)" />
             <div class="gallery-grid">
-              <img src="country-risk-briefing-ethiopia.png" alt="Country risk briefing for Ethiopia" class="gallery-image" />
-              <img src="country-risk-briefing-uganda.png" alt="Country risk briefing for Uganda" class="gallery-image" />
+              <img src="country-risk-briefing-ethiopia.png" alt="Country risk briefing for Ethiopia" class="gallery-image clickable-image" onclick="openLightbox(this.src)" />
+              <img src="country-risk-briefing-uganda.png" alt="Country risk briefing for Uganda" class="gallery-image clickable-image" onclick="openLightbox(this.src)" />
             </div>
+
             <div class="video-card">
               <div class="video-topline">Automation demo</div>
-              <div class="video-embed-wrap">
-                <iframe
-                  class="video-embed"
-                  src="https://www.youtube.com/embed/gLmYPJe6gZs"
-                  title="Country Risk Automation Demo"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen>
-                </iframe>
-              </div>
+              <a
+                class="video-preview-link"
+                href="https://youtu.be/gLmYPJe6gZs"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="country-risk-workflow.png"
+                  alt="Country Risk Automation Demo"
+                  class="video-preview-image clickable-image"
+                  onclick="event.preventDefault(); openLightbox(this.src);"
+                />
+              </a>
               <p class="video-note">A walkthrough of the workflow design, automated briefings, and the intelligence output structure.</p>
+              <a
+                class="btn btn-primary"
+                href="https://youtu.be/gLmYPJe6gZs"
+                target="_blank"
+                rel="noopener"
+              >
+                Watch walkthrough
+              </a>
             </div>
           </div>
         </div>
@@ -307,51 +331,67 @@
         <div class="glass dashboard-card">
           <span class="section-pill">Demo video</span>
           <h3>Credit risk walkthrough</h3>
-          <div class="video-embed-wrap compact-wrap">
-            <iframe
-              class="video-embed"
-              src="https://www.youtube.com/embed/9IbyXlkI_hU"
-              title="Credit Risk Project Walkthrough"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+          <div class="video-fallback-card">
+            <img
+              src="credit-card-dashboard.png"
+              alt="Credit Risk Project Walkthrough"
+              class="dashboard-image clickable-image"
+              onclick="openLightbox(this.src)"
+            />
+            <p class="video-note">
+              Walkthrough of the dashboard, modelling approach, and key risk insights.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://youtu.be/9IbyXlkI_hU"
+              target="_blank"
+              rel="noopener"
+            >
+              Watch walkthrough
+            </a>
           </div>
         </div>
 
         <div class="glass dashboard-card">
           <span class="section-pill">Demo video</span>
           <h3>Country risk walkthrough</h3>
-          <div class="video-embed-wrap compact-wrap">
-            <iframe
-              class="video-embed"
-              src="https://www.youtube.com/embed/gLmYPJe6gZs"
-              title="Country Risk Project Walkthrough"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+          <div class="video-fallback-card">
+            <img
+              src="country-risk-workflow.png"
+              alt="Country Risk Project Walkthrough"
+              class="dashboard-image clickable-image"
+              onclick="openLightbox(this.src)"
+            />
+            <p class="video-note">
+              Walkthrough of the automation workflow, briefing structure, and intelligence output.
+            </p>
+            <a
+              class="btn btn-primary"
+              href="https://youtu.be/gLmYPJe6gZs"
+              target="_blank"
+              rel="noopener"
+            >
+              Watch walkthrough
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section container">
-      <div class="insight-grid">
-        <div class="glass insight-card">
-          <h3>Business-first structure</h3>
-          <p>Every project is framed as a business problem, a built solution, and a measurable outcome.</p>
-        </div>
-        <div class="glass insight-card">
-          <h3>Dashboard-ready communication</h3>
-          <p>Plain-language interpretation, clean visuals, and recruiter-friendly walkthroughs make the work easier to trust.</p>
-        </div>
-        <div class="glass insight-card">
-          <h3>LinkedIn-ready presentation</h3>
-          <p>Designed to serve as your public professional portfolio link with projects, demos, and your CV in one place.</p>
-        </div>
+    <section class="section container insights">
+      <div class="glass insight-card">
+        <h3>Real-world problems</h3>
+        <p>Projects built around practical challenges in risk, analytics, and decision-making.</p>
+      </div>
+
+      <div class="glass insight-card">
+        <h3>Actionable insights</h3>
+        <p>Turning data into clear, useful insights through modelling and visualisation.</p>
+      </div>
+
+      <div class="glass insight-card">
+        <h3>End-to-end projects</h3>
+        <p>From raw data to models, dashboards, and automated pipelines.</p>
       </div>
     </section>
 
@@ -361,12 +401,12 @@
           <p class="eyebrow">CONTACT</p>
           <h2>Let’s connect.</h2>
           <p>
-            I’m interested in opportunities in data science, analytics, banking, risk, AI, and intelligent automation.
+            I’m interested in opportunities in Data Science, Analytics, Banking, Risk, AI Engineering, and Intelligent Automation.
           </p>
         </div>
         <div class="contact-links">
           <a href="mailto:kagisoformal228@gmail.com">kagisoformal228@gmail.com</a>
-          <a href="https://linkedin.com/in/kagiso-mosehla" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/kagiso-mosehla-a23071272/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/Kagiso228" target="_blank" rel="noopener">GitHub</a>
           <a href="Kagiso_Mosehla_CV.pdf" target="_blank" rel="noopener">View CV</a>
         </div>
@@ -384,6 +424,26 @@
     if (toggle) {
       toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
     }
+
+    function openLightbox(src) {
+      const lightbox = document.getElementById("lightbox");
+      const img = document.getElementById("lightbox-img");
+      img.src = src;
+      lightbox.style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLightbox();
+    });
   </script>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Expanded view">
+  </div>
 </body>
 </html>
